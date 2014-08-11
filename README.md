@@ -1,4 +1,5 @@
-website-2014
-============
+# PHPConf Website
 
-website for Taiwan PHP Conference 2014
+Souce Code for [Taiwan PHP Conference 2014 website][1]
+
+[1]: http://phpconf.tw/2014/
