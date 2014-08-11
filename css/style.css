@@ -1,10 +1,11 @@
-body, h1, h2, h2, h4, ul, li, div, p {
+body, h1, h2, h2, h4, h5, ul, li, div, p {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font: 16px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    line-height: 22px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -13,23 +14,45 @@ a {
 }
 
 h1 {
+    font-family: consolas;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
+h1 .code {
+    color: #ddd;
+}
+
 h2 {
+    font-size: 26px;
+}
+
+h3 {
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     text-align: center;
     font-size: 50px;
 }
 
 nav {
     position: fixed;
+    z-index: 400;
     top: 0;
     width: 100%;
     background: #fff;
-    height: 22px;
+    height: 170px;
     padding-top: 8px;
+    opacity: 0.9;
+}
+
+nav img {
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 30px;
 }
 
 nav ul {
@@ -53,31 +76,40 @@ nav a:hover {
     border-bottom: 3px solid #000;
 }
 
+section {
+    padding-top: 140px;
+}
+
 #main {
-    padding-top: 100px;
+    padding-top: 220px;
     padding-bottom: 140px;
     text-align: center;
     background: #EEF5FF;
 }
 
-#announce {
-    background: url(http://tourists360.com/wp-content/uploads/2013/12/Yosemite-National-Park-8.jpg);
-    background-size: cover;
-    background-position: center;
+#sponsors {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
-#announce h2 {
-    color: #fff;
-}
-
-#announce h3 {
+#announce h4 {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#announce a {
+    color: #000;
+}
+
+#announce a:hover {
+    border-bottom: 1px solid #000;
+    padding-bottom: -1px;
 }
 
 .post span {
     position: absolute;
-    margin-top: 8px;
     margin-left: -100px;
 }
 
@@ -91,7 +123,7 @@ nav a:hover {
 }
 
 #schedule table {
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
     border: 1px solid #ddd;
     border-collapse: separate;
@@ -103,21 +135,28 @@ nav a:hover {
 #schedule thead {
     border: 0;
 }
+
 #schedule tbody tr:nth-child(odd) td, #schedule tbody tr:nth-child(odd) th {
     background-color: #EEF5FF;
 }
 
 #schedule table th, #schedule table td {
     padding: 8px;
-    line-height: 20px;
+    line-height: 22px;
     text-align: left;
     vertical-align: top;
     border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+#schedule table th {
+    border-top: 0;
+    text-align: center;
 }
 
 #speakers {
     height: 880px;
-    background: #eee;
+    background: #EEF5FF;
 }    
 
 #speakers h4 {
@@ -134,17 +173,17 @@ nav a:hover {
     margin-left: 190px;
 }
 
-.speaker-info h3 {
+.speaker-info h4 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.speaker-info h4 {
+.speaker-info h5 {
     color: #666;
 }
 
 .speaker-info p {
-    line-height: 20px
+    line-height: 22px
 }
 
 .speaker-links {
@@ -153,17 +192,34 @@ nav a:hover {
 
 #venue {
     height: 880px;
-    background: #eee;
+    background: #EEF5FF;
+}
+
+#venue h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#venue h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .venue-info {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
 .venue-info h4 {
     margin-bottom: 30px;
+}
+
+.venue-text {
+    float: left;
+    width: 380px;
+    margin-right: 20px;
+    text-align: left;
 }
 
 #about {
@@ -181,7 +237,7 @@ nav a:hover {
 }
 
 .about-info ul {
-    width: 420px;
+    width: 480px;
     list-style: none;
     text-align: left;
     margin: 0 auto;
@@ -199,7 +255,6 @@ footer {
 article {
     width: 600px;
     margin: 0 auto;
-    color: #fff;
 }
 
 article p {
@@ -217,6 +272,7 @@ article p {
 hr {
     width: 30%;
     margin-top: 50px;
+    margin-bottom: 50px;
     border: 0;
     border-top: 1px solid #ccc;
 }

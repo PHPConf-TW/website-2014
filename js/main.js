@@ -1,4 +1,6 @@
 $(function(){   
+
+
     $("#reg").on({
         click: function(e) {
             e.preventDefault();
@@ -18,3 +20,7 @@ $(function(){
         }
     });  
 });
+
+    function toggle(name) {
+        $('.' + name).toggle();
+    }
