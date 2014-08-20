@@ -1,5 +1,5 @@
 .sass-cache
-app/vendor
+app/assets/vendor
 node_modules/
 test/*.js
 dist

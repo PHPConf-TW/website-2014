@@ -13,39 +13,28 @@ reload = browserSync.reload
 paths =
   src: 'app'
   script: 'app/assets/js'
-  coffee: 'app/assets/coffee'
-  sass: 'app/assets/sass'
   css: 'app/assets/css'
   images: 'app/assets/images'
   test: 'test'
   dist: 'dist'
   vendor: 'app/assets/vendor'
 
-coffeelintTasks = lazypipe()
-  .pipe $.coffeelint
-  .pipe $.coffeelint.reporter
-  .pipe $.coffee, bare: true
-
-gulp.task 'coffee', ->
-  gulp.src paths.coffee + '/**/*.coffee'
-    .pipe $.if !production, $.changed paths.script,
-      extension: '.js'
-    .pipe coffeelintTasks()
-    .pipe gulp.dest paths.script
-
 gulp.task 'test_coffee', ->
   gulp.src paths.test + '/**/*.coffee'
     .pipe $.if !production, $.changed paths.test,
       extension: '.js'
-    .pipe coffeelintTasks()
+    .pipe $.coffee, bare: true
     .pipe gulp.dest paths.test
 
 gulp.task 'html', ->
   gulp.src paths.src + '/*.html'
-    .pipe $.changed paths.dist
-    .pipe $.replace 'main-built', filename
     .pipe $.useref.assets()
+    # Concatenate And Minify JavaScript
     .pipe $.if '*.js', $.uglify()
+    .pipe $.useref.restore()
+    .pipe $.useref()
+    # Concatenate And Minify Styles
+    .pipe $.if '*.css', $.csso()
     .pipe $.useref.restore()
     .pipe $.useref()
     .pipe $.if '*.html', $.htmlmin
@@ -53,22 +42,9 @@ gulp.task 'html', ->
       collapseWhitespace: true
     .pipe gulp.dest paths.dist
 
-gulp.task 'styles', ->
-  gulp.src paths.css + '/**/*.css'
-    .pipe $.if production, minifyCSS()
-    .pipe $.if production, gulp.dest paths.dist + '/assets/css/'
-
-gulp.task 'lint', ->
-  gulp.src 'gulpfile.js'
-    .pipe $.jshint()
-    .pipe $.jshint.reporter 'default'
-
 # Clean
 gulp.task 'clean', require('del').bind null, [
     paths.dist
-    '.sass-cache'
-    paths.script
-    paths.css
   ]
 
 # Images
@@ -94,10 +70,9 @@ gulp.task 'connect:app', ->
       baseDir: [paths.src]
 
   # run tasks automatically when files change
-  gulp.watch paths.coffee + '/**/*.coffee', ['coffee']
   gulp.watch paths.test + '/**/*.coffee', ['test_coffee']
   gulp.watch paths.src + '/*.html', reload
-  gulp.watch paths.css + '/**/*.css', ['styles']
+  gulp.watch paths.css + '/**/*.css', reload
   gulp.watch paths.images + '/**/*.{jpg,jpeg,png,gif}', ['images', reload]
   gulp.watch paths.script + '/**/*.js', reload
   gulp.watch paths.css + '/**/*.css', reload
@@ -113,7 +88,6 @@ gulp.task 'connect:dist', ->
 
 gulp.task 'copy', ->
   gulp.src [
-    paths.src + '/.htaccess'
     paths.src + '/favicon.ico'
     paths.src + '/robots.txt']
     .pipe gulp.dest paths.dist
@@ -122,7 +96,6 @@ gulp.task 'copy', ->
 # The default task (called when you run `gulp`)
 gulp.task 'default', (cb) ->
   runs(
-    ['coffee', 'styles']
     'connect:app'
     cb)
 
@@ -130,9 +103,7 @@ gulp.task 'default', (cb) ->
 
 gulp.task 'build', (cb) ->
   runs([
-    'coffee'
     'images'
-    'styles'
     'copy']
     'html'
     cb)
