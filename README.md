@@ -42,10 +42,14 @@ Open browser like chrome or firefox and enter http://localhost:3000 URL.
 
 Execute the following command will generate dist folder.
 
+```
 $ npm run release
+```
 
 ## Test
 
 To test release process by following command.
 
+```
 $ npm test
+```
