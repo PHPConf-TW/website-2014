@@ -1,0 +1,16 @@
+{
+  "name": "phpconf-tw-2014",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
