@@ -23,7 +23,7 @@ gulp.task 'test_coffee', ->
   gulp.src paths.test + '/**/*.coffee'
     .pipe $.if !production, $.changed paths.test,
       extension: '.js'
-    .pipe $.coffee, bare: true
+    .pipe $.coffee bare: true
     .pipe gulp.dest paths.test
 
 gulp.task 'html', ->
@@ -58,7 +58,7 @@ gulp.task 'images', ->
 
 # testing via mocha tool
 gulp.task 'test', ->
-  gulp.src paths.test + '/test.js'
+  gulp.src paths.test + '/**/*.js'
     .pipe $.mocha
       reporter: 'spec'
 
