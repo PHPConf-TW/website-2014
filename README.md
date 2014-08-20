@@ -15,7 +15,9 @@ $ npm install && bower install
 
 Start App
 
+```
 $ npm start
+```
 
 Excuting above command will output the following message.
 
