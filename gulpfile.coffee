@@ -3,10 +3,7 @@
 gulp = require 'gulp'
 runs = require 'run-sequence'
 $ = require('gulp-load-plugins')()
-minifyCSS = require 'gulp-minify-css'
-production = true if $.util.env.env is 'production'
 filename = require('uuid').v4()
-lazypipe = require 'lazypipe'
 browserSync = require 'browser-sync'
 reload = browserSync.reload
 
@@ -21,13 +18,14 @@ paths =
 
 gulp.task 'test_coffee', ->
   gulp.src paths.test + '/**/*.coffee'
-    .pipe $.if !production, $.changed paths.test,
+    .pipe $.changed paths.test,
       extension: '.js'
     .pipe $.coffee bare: true
     .pipe gulp.dest paths.test
 
 gulp.task 'html', ->
   gulp.src paths.src + '/*.html'
+    .pipe $.replace 'main.min', filename
     .pipe $.useref.assets()
     # Concatenate And Minify JavaScript
     .pipe $.if '*.js', $.uglify()
