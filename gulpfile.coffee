@@ -41,6 +41,7 @@ gulp.task 'html', ->
       removeComments: true
       collapseWhitespace: true
     .pipe gulp.dest paths.dist
+    .pipe $.size title: 'html'
 
 # Clean
 gulp.task 'clean', require('del').bind null, [
@@ -50,11 +51,12 @@ gulp.task 'clean', require('del').bind null, [
 # Images
 gulp.task 'images', ->
   gulp.src paths.images + '/**/*.{jpg,jpeg,png,gif}'
-    .pipe $.if production, $.changed paths.dist + '/assets/images'
-    .pipe $.if production, $.cache $.imagemin
+    .pipe $.changed paths.dist + '/assets/images'
+    .pipe $.cache $.imagemin
       progressive: true
       interlaced: true
-    .pipe $.if production, gulp.dest paths.dist + '/assets/images'
+    .pipe gulp.dest paths.dist + '/assets/images'
+    .pipe $.size title: 'images'
 
 # testing via mocha tool
 gulp.task 'test', ->
@@ -73,9 +75,8 @@ gulp.task 'connect:app', ->
   gulp.watch paths.test + '/**/*.coffee', ['test_coffee']
   gulp.watch paths.src + '/*.html', reload
   gulp.watch paths.css + '/**/*.css', reload
-  gulp.watch paths.images + '/**/*.{jpg,jpeg,png,gif}', ['images', reload]
+  gulp.watch paths.images + '/**/*.{jpg,jpeg,png,gif}', reload
   gulp.watch paths.script + '/**/*.js', reload
-  gulp.watch paths.css + '/**/*.css', reload
 
 # Connect
 gulp.task 'connect:dist', ->
