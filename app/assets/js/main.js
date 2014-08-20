@@ -1,4 +1,4 @@
-$(function(){   
+$(function(){
 
 
     $("#reg").on({
@@ -18,7 +18,7 @@ $(function(){
                 }
             });
         }
-    });  
+    });
 });
 
     function toggle(name) {
