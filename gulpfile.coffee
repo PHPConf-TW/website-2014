@@ -29,11 +29,11 @@ gulp.task 'html', ->
     .pipe $.useref.assets()
     # Concatenate And Minify JavaScript
     .pipe $.if '*.js', $.uglify()
-    .pipe $.useref.restore()
+    .pipe $.useref.assets().restore()
     .pipe $.useref()
     # Concatenate And Minify Styles
     .pipe $.if '*.css', $.csso()
-    .pipe $.useref.restore()
+    .pipe $.useref.assets().restore()
     .pipe $.useref()
     .pipe $.if '*.html', $.htmlmin
       removeComments: true
