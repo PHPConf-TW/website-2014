@@ -11,11 +11,12 @@ describe 'html5 template generator test', ->
     ]
     for item in expected
       assert.equal(true, fs.existsSync(item))
+    null
 
   it 'delete expected files', ->
     not_expected = [
-      'dist/assets/vendor/'
+      'dist/assets/vendor'
     ]
     for item in not_expected
       assert.equal(false, fs.existsSync(item))
-  null
+    null

@@ -24,16 +24,15 @@ gulp.task 'test_coffee', ->
     .pipe gulp.dest paths.test
 
 gulp.task 'html', ->
+  assets = $.useref.assets()
   gulp.src paths.src + '/*.html'
     .pipe $.replace 'main.min', filename
-    .pipe $.useref.assets()
+    .pipe assets
     # Concatenate And Minify JavaScript
     .pipe $.if '*.js', $.uglify()
-    .pipe $.useref.assets().restore()
-    .pipe $.useref()
     # Concatenate And Minify Styles
     .pipe $.if '*.css', $.csso()
-    .pipe $.useref.assets().restore()
+    .pipe assets.restore()
     .pipe $.useref()
     .pipe $.if '*.html', $.htmlmin
       removeComments: true
