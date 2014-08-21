@@ -34,9 +34,7 @@ gulp.task 'html', ->
     .pipe $.if '*.css', $.csso()
     .pipe assets.restore()
     .pipe $.useref()
-    .pipe $.if '*.html', $.htmlmin
-      removeComments: true
-      collapseWhitespace: true
+    .pipe $.if '*.html', $.minifyHtml()
     .pipe gulp.dest paths.dist
     .pipe $.size title: 'html'
 
