@@ -4,7 +4,6 @@ fs = require('fs')
 describe 'html5 template generator test', ->
   it 'creates expected files', ->
     expected = [
-      'dist/favicon.ico'
       'dist/index.html'
       'dist/404.html'
       'dist/robots.txt'
