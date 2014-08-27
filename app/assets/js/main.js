@@ -11,7 +11,7 @@ $(function(){
         click: function(e) {
             e.preventDefault();
             return $("body").stop().scrollTo($($(this).attr("href")), {
-                duration: 800,
+                duration: ($(document).width() > 500) ? 800 : 0,
                 offset: {
                     left: 0,
                     top: -0.03 * $(window).height()
@@ -21,6 +21,15 @@ $(function(){
     });
 });
 
-    function toggle(name) {
-        $('.' + name).toggle();
-    }
+function toggle(name) {
+    $('.' + name).toggle();
+}
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    // Do something
+    if (scroll > 500)
+        $('#gotop').show();
+    else
+        $('#gotop').hide();
+});

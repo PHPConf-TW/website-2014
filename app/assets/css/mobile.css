@@ -1,0 +1,137 @@
+@media (max-width: 500px) {
+    section {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    article p {
+        padding: 0 5%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    h1 {
+        line-height: 46px;
+        margin-top: 10px;
+        padding-top: 10px;
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h4 {
+        line-height: 30px;
+    }
+
+    nav {
+        height: auto;
+        position: relative;
+    }
+
+    nav img {
+        height: 180px;
+    }
+
+    nav ul {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    nav li {
+        line-height: 30px;
+    }
+
+    #main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .venue-info {
+        width: 100%;
+    }
+
+    .venue-text {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+    }
+
+    #venue h4 {
+        padding: 0 5%;
+        font-size: 22px;
+    }
+
+    .venue-map img {
+        width: 100%;
+    }
+
+    .post span {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        width: 50%;
+    }
+
+    #schedule table {
+        width: 100%;
+    }
+
+    th {
+        width: auto;
+    }
+
+    .trans {
+        padding: 0 5%;
+    }
+
+    .about-info {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .about-info span {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .about-info ul {
+        width: 100%;
+    }
+
+    .about-info li {
+        display: block;
+        text-align: center;
+    }
+
+    .speaker {
+        width: 100%;
+    }
+
+    .avatar {
+        width: 80px;
+        padding-left: 5%;
+    }
+
+    .speaker-info {
+        margin-left: 100px;
+        padding: 0 5%;
+    }
+
+    #gotop {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+    }
+}

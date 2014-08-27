@@ -1,12 +1,15 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
     <title>PHPConf Taiwan 2014</title>
 
     <!-- build:css assets/css/main.min.css -->
     <link href="assets/vendor/normalize-css/normalize.css" media="screen, projection" rel="stylesheet"/>
     <link href="assets/css/style.css" media="screen, projection" rel="stylesheet"/>
+    <link href="assets/css/mobile.css" media="screen, projection" rel="stylesheet"/>
     <!-- endbuild -->
 </head>
 <body>
@@ -16,11 +19,12 @@
 
         <ul>
             <li><a href="#main">首頁</a></li>
-            <li><a href="http://phpconftw.kktix.cc/events/phpconftw2012" target="_blank" id="reg">報名</a></li>
+            <!-- <li><a href="http://phpconftw.kktix.cc/events/phpconftw2012" target="_blank" id="reg">報名</a></li> -->
             <li><a href="#announce">公告</a></li>
-            <li><a href="#speakers">講師</a></li>
+            <!-- <li><a href="#speakers">講師</a></li> -->
             <li><a href="#schedule">行程</a></li>
             <li><a href="#venue">地點</a></li>
+            <li><a href="#prospect">展望</a></li>
             <li><a href="#about">關於</a></li>
         </ul>
     </nav>
@@ -28,7 +32,7 @@
     <section id="main">
         <h1><span class="code">&lt;?php echo "</span>PHPConf Taiwan<span class="code">"; // 2014 ?&gt;</span></h1>
         <h2>10月18日 中央研究院人文科學大樓</h2>
-        <div id="sponsors">
+        <div id="sponsors" style="display: none;">
             <div class="sponsor">
                 <h4>鑽石級贊助</h4>
                 <img src="http://phpconf.tw/2013/images/sponsors/kkbox.png" />
@@ -63,51 +67,12 @@
 
         <article>
             <div class="post">
-                <span>2014.08.27</span>
-                <h4>議程錄影連結更新！</h4>
-                <p>各議程的錄影連結已上線囉！請到議程表中觀賞。</p>
+                <span>2014.08.26</span>
+                <p align="center">第一次報名日期<br>
+                2014/09/18<br>
+                第二次報名日期<br>
+                2014/09/24</p>
                 <hr>
-            </div>
-            <div class="post">
-                <span>2014.08.17</span>
-                <h4>議程簡報連結更新！</h4>
-                <p>讓大家久等了！各議程的簡報連結已上線囉！請到議程表中取得。</p>
-                <p>註：錄影檔將於近期釋出，敬請稍候。</p>
-                <hr>
-            </div>
-            <div class="post">
-                <span>2014.08.07</span>
-                <h4>PHPConf Taiwan 手機 App 來了！！</h4>
-                <p>為了能讓大家能更迅速掌握大會相關資訊，我們推出了 PHPConf Taiwan 手機 App ，現在各位可以在 Google Play 下載它囉！</p>
-                <p>各位也可以透過這個 App 觀看本次大會所釋出的簡報與影片；未來我們也會藉由這個 App 即時帶給大家關於 PHPConf 的重要資訊，歡迎大家下載安裝。</p>
-                <hr>
-            </div>
-            <div class="post">
-                <span>2014.08.07</span>
-                <h4><a href="javascript:toggle('a3fa');">PHPConf Taiwan 手機 App 來了！！</a></h4>
-                <div class="a3fa" style="display: none;">
-                    <p>為了能讓大家能更迅速掌握大會相關資訊，我們推出了 PHPConf Taiwan 手機 App ，現在各位可以在 Google Play 下載它囉！</p>
-                    <p>各位也可以透過這個 App 觀看本次大會所釋出的簡報與影片；未來我們也會藉由這個 App 即時帶給大家關於 PHPConf 的重要資訊，歡迎大家下載安裝。</p>
-                    <hr>
-                </div>
-            </div>
-            <div class="post">
-                <span>2014.08.07</span>
-                <h4><a href="javascript:toggle('b2af');">PHPConf Taiwan 手機 App 來了！！</a></h4>
-                <div class="b2af" style="display: none;">
-                    <p>為了能讓大家能更迅速掌握大會相關資訊，我們推出了 PHPConf Taiwan 手機 App ，現在各位可以在 Google Play 下載它囉！</p>
-                    <p>各位也可以透過這個 App 觀看本次大會所釋出的簡報與影片；未來我們也會藉由這個 App 即時帶給大家關於 PHPConf 的重要資訊，歡迎大家下載安裝。</p>
-                    <hr>
-                </div>
-            </div>
-            <div class="post">
-                <span>2014.08.07</span>
-                <h4><a href="javascript:toggle('3fra');">PHPConf Taiwan 手機 App 來了！！</a></h4>
-                <div class="3fra" style="display: none;">
-                    <p>為了能讓大家能更迅速掌握大會相關資訊，我們推出了 PHPConf Taiwan 手機 App ，現在各位可以在 Google Play 下載它囉！</p>
-                    <p>各位也可以透過這個 App 觀看本次大會所釋出的簡報與影片；未來我們也會藉由這個 App 即時帶給大家關於 PHPConf 的重要資訊，歡迎大家下載安裝。</p>
-                    <hr>
-                </div>
             </div>
         </article>
     </section>
@@ -155,58 +120,154 @@
             <thead>
                 <tr>
                     <th width="110">時間</th>
-                    <th width="415">國際會議廳</th>
-                    <th width="415">第二會議室</th>
+                    <th width="">國際會議廳</th>
+                    <th width="">第二會議室</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>09:00 ~ 09:20</td>
-                    <td colspan="2">報到</td>
+                    <td style="text-align:center;">09:00 ~ 09:20</td>
+                    <td colspan="2" style="text-align: center;">報到</td>
                 </tr>
                 <tr>
-                    <td>09:20 ~ 09:30</td>
-                    <td colspan="2">開幕</td>
+                    <td style="text-align:center;">09:20 ~ 09:30</td>
+                    <td colspan="2" style="text-align: center;">開幕</td>
                 </tr>
                 <tr>
-                    <td>09:30 ~ 10:20</td>
-                    <td colspan="2">
-                        矛盾大對決 - 能入侵任何網站的駭客 vs. 絕對不會被入侵的網站
-
-Allen Own & Orange Tsai
-
-在網路資訊安全越顯重要的今天，您如何保護您的網站資料不被竊取呢？瞭解駭客的心理與技術，瞭解網站程式有何漏洞，都是現在 Web 開發必須熟知的課題。這次， PHPConf 邀請到了 Allen Own 與 Orange Tsai 兩位台灣資安界的高手，他們將透過精心設計的攻防實戰，告訴大家資安的重要性！
-
-簡報一 (Allen Own)
-簡報二 (Orange Tsai)
-錄影
-註：本場議程分兩份簡報，需要同時對照參考才不致誤解講師的原意。</td>
-                </tr>
-                <tr>
-                    <td>15:10 ~ 15:30</td>
-                    <td colspan="2">下午茶</td>
-                </tr>
-                <tr>
-                    <td>15:45 ~ 16:10</td>
+                    <td style="text-align:center;">09:30 ~ 10:40</td>
                     <td>
-                      PHP 也是可以很 event - 用 PHP 打造一個 Realtime Web
+                        PHP在微博的使用經驗 (Laruence)
 
-Ricky
+                        簡介待補
+                    </td>
+                    <td>
+                        PHP on Microsoft Azure (MS)
 
-PHP 給人的印象往往是無法在大流量下做到即時反應，而且離不開 Apache Web Server 。講者將說明 PHP 只要透過 event extension ，也可以用來處理大量連線問題。並針對 comet 技術與 c10k 問題作逐一的探討。
-
-簡報
-錄影</td>
-                    <td>Composer 入門與應用
-
-Jace Ju
-
-Composer 是 PHP 新一代的套件管理工具，越來越多的專案已經改用 Composer 來管理。講者將為大家帶來 Composer 的使用方法，並介紹 Composer 在實務應用的心得。
-
-簡報
-錄影</td>
+                        簡介待補
+                    </td>
                 </tr>
-            </tbody>
+                <tr>
+                    <td style="text-align:center;">10:40 ~ 10:50</td>
+                    <td colspan="2" style="text-align: center;">休息</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">10:50 ~ 11:30</td>
+                    <td>
+                        創意與專案管理的冰與火之爭 (Joe)
+
+                        對基層工程師而言，專案管理似乎是某種干擾工作的奇怪流程。 尤其對於創意開發的工作者而言，這兩者似乎是毫不相容的東西？ 
+                        很多人普遍認為，創意不能被管理、更不應該被管理。 
+                        但實際上，好的專案管理其實是對於創意開發的一項助力，好的專案管理也應該能幫忙案子收斂並提供商業上多面向的協助。 
+                        這場內容我們將來探討如何讓冰與火融合，來讓案子更順利的管理要素。
+                    </td>
+                    <td>
+                        選舉黃頁開發經驗分享 (Kiang)
+
+                        選舉黃頁是宅男 kiang 說要選議員之後發揮宅力做出來的，原本使用 laravel 製作，後來一直沒有進度才打掉用 cakephp 重練，透過這次活動分享一些心酸血淚。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">11:30 ~ 12:30</td>
+                    <td colspan="2" style="text-align: center;">午餐</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">12:30 ~ 13:20</td>
+                    <td>
+                        MongoDB (ReinySong)
+
+簡介待補
+                    </td>
+                    <td>
+Framework or Framework Less (蒼時弦也)
+
+Framework 可以幫助我們快速的開發網站，但是被「框架」限制住的我們，能夠突破這個框架，做出更多的變化嗎？運用 Composer 讓我們在「套件菜市場」中，尋找適合自己的「零件」然後建構一個能夠對應 Framework 無法適用的簡易型框架。
+
+這場演講將會分享怎麼運用 Pux, idiorm/pairs, twig 等套件，組合出 MVC 的架構，卻能夠在需要的時候隨時置換對應各種情況。
+                    </td>
+                </tr>                
+                <tr>
+                    <td style="text-align:center;">13:20 ~ 14:10</td>
+                    <td colspan="2" style="text-align: center;">休息</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">13:30 ~ 14:10</td>
+                    <td>
+PHP Extension 開發實務 - 補齊 PHP 遺失的 $_PUT 與 $_DELETE (FirchTsai)
+
+以 EPV 實例帶領會眾瞭解 PHP Extension 的開發動機、架構與成果。並延伸探討 PHP Extension 應用於產品中的實務案例。
+
+EPV : Extra Predefined Variables for PHP，用來補齊 PHP 遺失的 $_PUT 與 $_DELETE
+(<a href="https://github.com/tronice/epv" target="_blank">github</a>)
+                    </td>
+                    <td>
+Feebee 比價網的甘苦談 (Tsung)
+
+此場次會先聊聊在抓取各種網站遇到的困難, 再進而談到 Feebee 在抓資料、串 API 製作上, 遇到的問題和解法, 最後來簡單示範、說明如何使用 phpQuery 來抓取網頁內容.
+                    </td>
+                </tr> 
+                <tr>
+                    <td style="text-align:center;">14:10 ~ 14:40</td>
+                    <td colspan="2" style="text-align: center;">下午茶</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">14:40 ~ 15:10</td>
+                    <td>
+                        Building Powerful command-line application with PHP (c9s)
+
+CLIFramework is a command-line application framework, for building flexiable, simple command-line applications.
+                    </td>
+                    <td>
+                        HTTP accelerator - Varnish 應用 (Ninja)
+
+在大型網站上，透過 Varnish 機制加速網頁伺服器回應速度的實際應用場景，包含 cache 應用，多 domain 轉址及手機來源判斷機制等相關應用
+                    </td>
+                </tr> 
+                <tr>
+                    <td style="text-align:center;">15:10 ~ 15:20</td>
+                    <td colspan="2" style="text-align: center;">休息</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">15:20 ~ 16:00</td>
+                    <td>
+                        Phalcon 進行式 (SDpower)
+
+使用phpalcon framework開發該如何上手以及架構與使用。
+內容包含使用方式ORM, Template Engine (Volt),DI ,Events Management ,Encryption ,HTTP Request ,Response ,Cookies。 
+                    </td>
+                    <td>
+                        運用 Docker 部署PHP專案 (Fntsrlike)
+
+Docker是這一年來虛擬化環境的新秀，以LXC技術展現輕量型虛擬化，並且擁有自動建構、版本控制的特性，配合Docker 
+hub平台，讓我們能夠快速部署伺服器環境與專案。而這個連Google、Red 
+Hat都很是重視的LXC管理工具，該如何運用在PHP的專案上呢？就讓我們一探究竟吧！
+                    </td>
+                </tr> 
+                <tr>
+                    <td style="text-align:center;">16:00 ~ 16:10</td>
+                    <td colspan="2" style="text-align: center;">休息</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">16:10 ~ 16:50</td>
+                    <td>
+                        實戰 HHVM Extension (Ricky)
+
+HHVM 是 Facebook 開發的一個高效能 PHP 虛擬機用來取代行之有年的 Zend Engine。
+但是，在獲得更高效能的同時也意味著原本 PECL 上的大量 Extension 必須一一改寫。
+藉由這個議程可以了解到如何透過 HNI 界面，混用 C++ 以及 Hack Lang。
+
+在效能以及開發速度上取得平衡，撰寫出屬於自己的 HHVM Extension。
+                    </td>
+                    <td>
+                        Percona XtraDB Cluster (Nekobe)
+
+簡介待補
+                    </td>
+                </tr> 
+                <tr>
+                    <td style="text-align:center;">16:50 ~ 17:00</td>
+                    <td colspan="2" style="text-align: center;">閉幕</td>
+                </tr>
+                </tbody>
         </table>
 
     </section>
@@ -216,18 +277,19 @@ Composer 是 PHP 新一代的套件管理工具，越來越多的專案已經改
 
         <div class="venue-info">
             <div class="venue-text">
-                <h4>中央研究院人文科學大樓</h4>
-                <strong>地址：</strong>台北市南港區研究院路二段128號 (<a href="https://www.google.com/maps/preview?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%8D%97%E6%B8%AF%E5%8D%80%E7%A0%94%E7%A9%B6%E9%99%A2%E8%B7%AF%E4%BA%8C%E6%AE%B5128%E8%99%9F" target="_blank">地圖</a>)<br><br>
-                <div>
+                <div class="trans">
+                    <h4>中央研究院人文科學大樓</h4>
+                    <strong>地址：</strong>台北市南港區研究院路二段128號 (<a href="https://www.google.com/maps/preview?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%8D%97%E6%B8%AF%E5%8D%80%E7%A0%94%E7%A9%B6%E9%99%A2%E8%B7%AF%E4%BA%8C%E6%AE%B5128%E8%99%9F" target="_blank">地圖</a>)<br><br>
+                    
                     <h5>交通方式</h5>
                     <strong>捷運：</strong>
                     至南港站1號出口換乘公車212(直)、212(區)、270或藍25(中研院站) OR 至南港展覽館站換乘公車212、276、306、620、645、679、205、小5、小1、小12(中研院站)
                     <br><br>
                     <strong>公車：</strong>
                     205、212、212(直)、212(區)、270、276、306、620、645、小12、藍25、679、小5、小1(中研院站)
+                    <br><br>
+                    <a href="http://www.sinica.edu.tw/location.htm" target="_blank">官網資訊</a>
                 </div>
-                <br>
-                <a href="http://www.sinica.edu.tw/location.htm" target="_blank">官網資訊</a>
             </div>
 
             <div class="venue-map">
@@ -237,6 +299,20 @@ Composer 是 PHP 新一代的套件管理工具，越來越多的專案已經改
             </div>
 
         </div>
+    </section>
+
+    <section id="prospect">
+        <h3>展望</h3>
+
+        <article>
+            <div class="post">
+                <p>歷經三屆的 PHPConf Taiwan ，在每位 PHP 開發者的參與下，主題從  2011 年以 PHP 開發相關工具的介紹來初試啼聲，到 2012 年著重 PHP Framework 的推廣，乃至去年以 PHP  實戰經驗為主的分享，使得我們相信在這三年不斷地挑戰下，各位 PHP 開發者都有很大的成長。</p>
+                <p>因此今年我們希望讓將議程廣度擴大，挑戰許多 PHP  開發者平常難以接觸的主題，例如專案管理、 NoSQL 應用與資料庫擴展以及 PHP 網站服務開發心得，讓與會者能得到專案開發與架構上的借鏡。但我們依然會維持過去議程的深度，加入更多  PHP 進階技術，例如官方 PHP 與 Facebook HHVM 兩種引擎在 Extension 上的開發經驗， Framework  的應用技巧等議題。</p>
+                <p>另外 PHP 應用程式的佈署技術，例如 Microsoft Azure 、 Docker  等更是每一位開發者都應該關心的議題。最後我們還邀請到 PHP 核心中國開發成員 Laruence ，分享他在微博上應用 PHP 的開發經驗。想要更深入瞭解 PHP 進階技術，或是如何掌控大型網站架構的朋友，千萬別錯過這些高手們交流的機會。</p>
+                <p>身為台灣最大型的 PHP 研討會，除了議程分享外， PHPConf Taiwan 2014 同時也是企業尋找 PHP 人才的最佳管道；當全台灣 PHP 界的各路英雄好漢都齊聚一堂時，就是各企業秀出手上最棒職務的機會！</p>
+                <p>最後感謝每一家贊助單位的支持，為 PHPConf Taiwan 2014 提供舉辦時所需要的資源與場地。我們將會盡我們一切的努力，來讓今年的 PHPConf Taiwan 更為精采可期！</p>
+            </div>
+        </article>
     </section>
 
     <section id="about">
@@ -251,9 +327,15 @@ Composer 是 PHP 新一代的套件管理工具，越來越多的專案已經改
 
     <footer>
         <a href="http://phpconf.tw/2013">2013</a> | <a href="http://phpconf.tw/2012">2012</a>  | <a href="http://phpconf.tw/2011">2011</a>
+        <br>
+        <br>
 
         <a href="mailto:contact@phpconf.tw">contact@phpconf.tw</a>
     </footer>
+
+    <div id="gotop">
+        <a href="#top"><img src="assets/images/go_top.gif"></a>
+    </div>
 
     <!-- build:js assets/js/main.min.js -->
     <script src="assets/vendor/jquery/dist/jquery.js"></script>
