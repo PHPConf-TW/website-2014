@@ -26,7 +26,7 @@ REV=`git describe --always`
 BUILD=git-$REV ./node_modules/.bin/bower install && ./node_modules/.bin/gulp release --env production
 cd dist
 git fetch --depth 1 origin master:master
-sed -i s/Disallow:/Disallow: \//g robots.txt
+sed -i 's/Disallow:/Disallow: \//g' robots.txt
 git add -A .
 echo "regen for $REV" | git commit-tree `git write-tree` -p `git rev-parse HEAD` -p $REV | xargs git reset --hard
 git push origin gh-pages -f
