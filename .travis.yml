@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-- '0.10'
+  - '0.10'
 env:
   global:
-    secure: JR1dPClsYp6AdcqJ0B5Uem+LsQrIONwIZ44Ch62HUsyW5rQfgHunS45aTZL44DkoTqldf6sOfvaHis04mVDgtEUzQ++nXhyUNTEwxdX06UtjkSCamnfwsbcdGdRe2I4FOj1g27i/fiCZRFlOJ+IYLQxA5387ijzQFlI29YV/CoQ=
+    - secure: "JR1dPClsYp6AdcqJ0B5Uem+LsQrIONwIZ44Ch62HUsyW5rQfgHunS45aTZL44DkoTqldf6sOfvaHis04mVDgtEUzQ++nXhyUNTEwxdX06UtjkSCamnfwsbcdGdRe2I4FOj1g27i/fiCZRFlOJ+IYLQxA5387ijzQFlI29YV/CoQ="
     - REPO="git@github.com:PHPConf-TW/website-2014"
 after_success: build/after_success.sh
