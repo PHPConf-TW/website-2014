@@ -1,7 +1,0 @@
-.sass-cache
-app/assets/vendor
-node_modules/
-test/*.js
-dist
-npm-debug.log
-.DS_Store
