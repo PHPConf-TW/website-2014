@@ -47,7 +47,7 @@ gulp.task 'clean', require('del').bind null, [
 gulp.task 'images', ->
   gulp.src paths.images + '/**/*.{jpg,jpeg,png,gif}'
     .pipe $.changed paths.dist + '/assets/images'
-    .pipe $.cache $.imagemin
+    .pipe $.imagemin
       progressive: true
       interlaced: true
     .pipe gulp.dest paths.dist + '/assets/images'
