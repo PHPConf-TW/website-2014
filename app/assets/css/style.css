@@ -4,7 +4,7 @@ body, h1, h2, h2, h4, h5, ul, li, div, p {
 }
 
 body {
-    font: 16px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font: 16px/18px 微軟正黑體, 'Microsoft Jhenghei', ff-tisa-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
     line-height: 22px;
     -webkit-font-smoothing: antialiased;
 }
@@ -82,6 +82,7 @@ nav a:hover {
 
 section {
     padding-top: 140px;
+    padding-bottom: 30px;
 }
 
 #main {
@@ -89,6 +90,11 @@ section {
     padding-bottom: 140px;
     text-align: center;
     background: #EEF5FF;
+    background-image: url(../images/background_7167.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 #sponsors {
@@ -110,6 +116,14 @@ section {
 #announce a:hover {
     border-bottom: 1px solid #000;
     padding-bottom: -1px;
+}
+
+#announce .highlight {
+    font-size: 26px;
+}
+
+#announce .highlight p {
+    line-height: 30px;
 }
 
 .post span {
@@ -256,7 +270,7 @@ footer {
 }
 
 article {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -307,4 +321,11 @@ hr {
 
 #gotop {
     display: none;
+}
+
+#prospect {
+    color: #fff;
+    background-image: url(../images/background_7185.jpg);
+    background-position: center;
+    background-size: cover;
 }
