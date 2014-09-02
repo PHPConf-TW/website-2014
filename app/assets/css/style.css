@@ -243,7 +243,7 @@ section {
 }
 
 .about-info {
-    width: 600px;
+    width: 320px;
     margin: 0 auto;
     text-align: center;
 }
@@ -253,7 +253,6 @@ section {
 }
 
 .about-info ul {
-    width: 480px;
     list-style: none;
     text-align: left;
     margin: 0 auto;
@@ -328,4 +327,9 @@ hr {
     background-image: url(../images/background_7185.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.notice {
+    margin-top: 30px;
+    text-align: center;
 }
