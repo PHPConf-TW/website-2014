@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body, h1, h2, h2, h4, h5, ul, li, div, p {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font: 16px/18px 微軟正黑體, 'Microsoft Jhenghei', ff-tisa-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+    font: 16px/18px "微軟正黑體", 'Microsoft Jhenghei', ff-tisa-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
     line-height: 22px;
     margin-top: 180px;
 }
@@ -81,20 +85,36 @@ nav a:hover {
 }
 
 section {
-    padding-top: 140px;
+    padding-top: 180px;
     padding-bottom: 30px;
+    min-height: 800px;
 }
 
-#main {
-    padding-top: 220px;
-    padding-bottom: 140px;
-    text-align: center;
+section:nth-child(n+2) {
     background: #EEF5FF;
+}
+
+#banner {
+    text-align: center;
     background-image: url(../images/background_7167.jpg);
     background-position: bottom;
     background-size: cover;
     color: #fff;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+#signup {
+
+}
+
+#signup p {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+#signup .date {
+    display: block;
 }
 
 #sponsors {
