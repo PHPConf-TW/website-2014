@@ -1,3 +1,6 @@
+/* =============================
+ * Common
+ * ============================= */
 * {
     box-sizing: border-box;
 }
@@ -16,9 +19,31 @@ body {
 p {
     margin-bottom: 26px;
 }
+
 a {
     text-decoration: none;
 }
+
+article {
+    width: 800px;
+    margin: 0 auto;
+}
+
+article p {
+    line-height: 26px;
+}
+
+hr {
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* =============================
+ * Heading
+ * ============================= */
 
 h1 {
     font-family: consolas;
@@ -44,6 +69,10 @@ h3 {
     text-align: center;
     font-size: 50px;
 }
+
+/* =============================
+ * Navigation
+ * ============================= */
 
 nav {
     position: fixed;
@@ -84,6 +113,10 @@ nav a:hover {
     border-bottom: 3px solid #000;
 }
 
+/* =============================
+ * Section Block
+ * ============================= */
+
 section {
     padding-top: 180px;
     padding-bottom: 30px;
@@ -94,6 +127,10 @@ section:nth-child(n+2) {
     background: #EEF5FF;
 }
 
+/* =============================
+ * Banner
+ * ============================= */
+
 #banner {
     text-align: center;
     background-image: url(../images/background_7167.jpg);
@@ -102,6 +139,10 @@ section:nth-child(n+2) {
     color: #fff;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
+
+/* =============================
+ * Sign Up
+ * ============================= */
 
 #signup {
 
@@ -116,6 +157,10 @@ section:nth-child(n+2) {
 #signup .date {
     display: block;
 }
+
+/* =============================
+ * Announce
+ * ============================= */
 
 #announce h4 {
     font-size: 30px;
@@ -143,10 +188,14 @@ section:nth-child(n+2) {
     line-height: 30px;
 }
 
-.post span {
+#announce .post span {
     position: absolute;
     margin-left: -100px;
 }
+
+/* =============================
+ * Schedule
+ * ============================= */
 
 #schedule {
     background: #fff;
@@ -189,6 +238,15 @@ section:nth-child(n+2) {
     text-align: center;
 }
 
+#schedule .notice {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* =============================
+ * Speakers
+ * ============================= */
+
 #speakers {
     display: none;
     background: #EEF5FF;
@@ -198,32 +256,48 @@ section:nth-child(n+2) {
     margin-bottom: 20px;
 }
 
-.speaker {
+#speakers .speaker {
     margin: 0 auto;
     margin-bottom: 50px;
     width: 800px;
 }
 
-.speaker-info {
+#speakers .speaker-info {
     margin-left: 190px;
 }
 
-.speaker-info h4 {
+#speakers .speaker-info h4 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.speaker-info h5 {
+#speakers .speaker-info h5 {
     color: #666;
 }
 
-.speaker-info p {
+#speakers .speaker-info p {
     line-height: 22px
 }
 
-.speaker-links {
+#speakers .speaker-links {
     margin-top: 20px;
 }
+
+#speakers .avatar {
+    width: 140px;
+    float: left;
+}
+
+#speakers .avatar-image {
+    width: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+/* =============================
+ * Venue
+ * ============================= */
 
 #venue {
     background: #EEF5FF;
@@ -239,22 +313,26 @@ section:nth-child(n+2) {
     margin-bottom: 10px;
 }
 
-.venue-info {
+#venue .venue-info {
     width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.venue-info h4 {
+#venue .venue-info h4 {
     margin-bottom: 30px;
 }
 
-.venue-text {
+#venue .venue-text {
     float: left;
     width: 380px;
     margin-right: 20px;
     text-align: left;
 }
+
+/* =============================
+ * Sponsor
+ * ============================= */
 
 #sponsors {
     width: 1000px;
@@ -262,73 +340,34 @@ section:nth-child(n+2) {
     margin-top: 100px;
 }
 
+/* =============================
+ * About
+ * ============================= */
+
 #about {
 }
 
-.about-info {
+#about .about-info {
     width: 320px;
     margin: 0 auto;
     text-align: center;
 }
 
-.about-info img {
+#about .about-info img {
     display: inline-block;
 }
 
-.about-info ul {
+#about .about-info ul {
     list-style: none;
     text-align: left;
     margin: 0 auto;
 }
 
-.about-info li {
+#about .about-info li {
     height: 50px;
 }
 
-footer {
-    margin-top: 100px;
-    height: 100px;
-    text-align: center;
-}
-
-article {
-    width: 800px;
-    margin: 0 auto;
-}
-
-article p {
-    line-height: 26px;
-}
-
-.mask {
-    background: rgba(0,0,0,0.4);
-}
-
-.post {
-    padding-bottom: 10px;
-}
-
-hr {
-    width: 30%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 0;
-    border-top: 1px solid #ccc;
-}
-
-.avatar {
-    width: 140px;
-    float: left;
-}
-
-.avatar-image {
-    width: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-}
-
-.icon {
+#about .icon {
     display: inline-block;
     height: 30px;
     width: 30px;
@@ -336,14 +375,24 @@ hr {
     margin-right: 20px;
 }
 
-.facebook-icon {
+#about .facebook-icon {
     background: url(https://www.facebook.com/images/fb_icon_325x325.png);
     background-size: cover;
 }
 
-#gotop {
-    display: none;
+/* =============================
+ * Footer
+ * ============================= */
+
+footer {
+    margin-top: 100px;
+    height: 100px;
+    text-align: center;
 }
+
+/* =============================
+ * Prospect
+ * ============================= */
 
 #prospect {
     color: #fff;
@@ -352,7 +401,14 @@ hr {
     background-size: cover;
 }
 
-.notice {
-    margin-top: 30px;
-    text-align: center;
+#prospect .post {
+    padding-bottom: 10px;
+}
+
+/* =============================
+ * Go Top
+ * ============================= */
+
+#gotop {
+    display: none;
 }
