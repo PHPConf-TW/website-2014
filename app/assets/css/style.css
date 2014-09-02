@@ -198,7 +198,6 @@ section:nth-child(n+2) {
  * ============================= */
 
 #schedule {
-    background: #fff;
     padding-bottom: 100px;
 }
 
@@ -253,7 +252,6 @@ section:nth-child(n+2) {
 
 #speakers {
     display: none;
-    background: #EEF5FF;
 }
 
 #speakers h4 {
@@ -304,7 +302,6 @@ section:nth-child(n+2) {
  * ============================= */
 
 #venue {
-    background: #EEF5FF;
 }
 
 #venue h4 {
