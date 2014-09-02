@@ -109,6 +109,9 @@ section {
     margin-bottom: 10px;
 }
 
+#announce article {
+    width: 600px;
+}
 #announce a {
     color: #000;
 }
