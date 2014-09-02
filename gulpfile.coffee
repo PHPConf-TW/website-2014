@@ -30,6 +30,8 @@ gulp.task 'html', ->
     .pipe assets
     # Concatenate And Minify JavaScript
     .pipe $.if '*.js', $.uglify()
+    .pipe $.if '*.css', $.uncss
+      html: ['app/index.html']
     # Concatenate And Minify Styles
     .pipe $.if '*.css', $.csso()
     .pipe assets.restore()
