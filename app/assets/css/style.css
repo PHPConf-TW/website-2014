@@ -238,6 +238,10 @@ section:nth-child(n+2) {
     text-align: center;
 }
 
+#schedule .time {
+    text-align: center;
+}
+
 #schedule .notice {
     margin-top: 30px;
     text-align: center;
