@@ -119,6 +119,7 @@ nav a:hover {
  * ============================= */
 
 section {
+    position: relative;
     padding-top: 180px;
     padding-bottom: 30px;
     min-height: 800px;
@@ -133,6 +134,7 @@ section:nth-child(odd) {
  * ============================= */
 
 #banner {
+    padding-top: 80px;
     text-align: center;
     background-image: url(../images/background_7167.jpg);
     background-position: bottom;
