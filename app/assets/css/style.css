@@ -159,6 +159,21 @@ section:nth-child(n+2) {
 }
 
 /* =============================
+ * Prospect
+ * ============================= */
+
+#prospect {
+    color: #fff;
+    background-image: url(../images/background_7185.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#prospect .post {
+    padding-bottom: 10px;
+}
+
+/* =============================
  * Announce
  * ============================= */
 
@@ -392,18 +407,8 @@ footer {
 }
 
 /* =============================
- * Prospect
  * ============================= */
 
-#prospect {
-    color: #fff;
-    background-image: url(../images/background_7185.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#prospect .post {
-    padding-bottom: 10px;
 }
 
 /* =============================
