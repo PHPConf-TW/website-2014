@@ -3,37 +3,31 @@
 
     var $w = $(w);
     var $d = $(d);
+    var $g = $('#gotop');
 
     $(function() {
 
-
-        $('#reg').on({
-            click: function(e) {
-                e.preventDefault();
-                return window.open($(this).attr('href'), '_blank');
-            }
-        });
         $('nav a').on({
             click: function(e) {
                 e.preventDefault();
                 return $('body').stop().scrollTo($($(this).attr('href')), {
-                    duration: ($(d).width() > 500) ? 800 : 0,
+                    duration: 800,
                     offset: {
                         left: 0,
-                        top: -0.03 * $(w).height()
+                        top: '180px'
                     }
                 });
             }
         });
     });
 
-    $(w).scroll(function(event) {
+    $w.scroll(function(event) {
         var scroll = $(w).scrollTop();
         // Do something
         if (scroll > 500)
-            $('#gotop').show();
+            $g.show();
         else
-            $('#gotop').hide();
+            $g.hide();
     });
 
 })(window, document);
