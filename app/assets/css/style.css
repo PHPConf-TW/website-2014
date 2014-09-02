@@ -117,12 +117,6 @@ section:nth-child(n+2) {
     display: block;
 }
 
-#sponsors {
-    width: 1000px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
 #announce h4 {
     font-size: 30px;
     font-weight: bold;
@@ -260,6 +254,12 @@ section:nth-child(n+2) {
     width: 380px;
     margin-right: 20px;
     text-align: left;
+}
+
+#sponsors {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 #about {
