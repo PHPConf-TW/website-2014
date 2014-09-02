@@ -157,7 +157,7 @@ section:nth-child(n+2) {
 #schedule {
     background: #fff;
     padding-bottom: 100px;
-}    
+}
 
 #schedule article {
     color: #000;
@@ -198,7 +198,7 @@ section:nth-child(n+2) {
 #speakers {
     display: none;
     background: #EEF5FF;
-}    
+}
 
 #speakers h4 {
     margin-bottom: 20px;
