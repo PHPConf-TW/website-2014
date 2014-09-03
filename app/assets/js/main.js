@@ -8,10 +8,9 @@
         (document.compatMode === 'CSS1Compat' ? $('html') : $('body')) :
         $('html,body');
     var $s = $('section');
-    var currentId = '#top';
 
     $(function() {
-
+        // 點選 Navigation 連結或 Go Top 按鈕時，頁面要平滑地捲動
         $('nav a, #gotop a').on('click', function(e) {
             e.preventDefault();
 
@@ -19,18 +18,11 @@
             var pageId = $this.attr('href');
             var top = $(pageId).offset().top;
 
-            if (currentId === pageId) {
-                return false;
-            }
-
             $b.animate({
                 scrollTop: top
             }, 600, function () {
-                window.location.hash = pageId;
                 $b.scrollTop(top);
             });
-
-            currentId = pageId;
         });
     });
 
