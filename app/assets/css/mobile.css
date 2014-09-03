@@ -1,4 +1,8 @@
 @media (max-width: 500px) {
+    body {
+        padding-top: 0;
+    }
+
     section {
         width: 100%;
         margin: 0;
@@ -31,6 +35,7 @@
     nav {
         height: auto;
         position: relative;
+        padding-bottom: 30px;
     }
 
     nav img {
@@ -53,11 +58,11 @@
         padding-bottom: 30px;
     }
 
-    .venue-info {
+    #venue .venue-info {
         width: 100%;
     }
 
-    .venue-text {
+    #venue .venue-text {
         width: 100%;
         float: none;
         margin-bottom: 30px;
@@ -68,7 +73,7 @@
         font-size: 22px;
     }
 
-    .venue-map img {
+    #venue .venue-map img {
         width: 100%;
     }
 
