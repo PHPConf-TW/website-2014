@@ -68,8 +68,7 @@
         margin-bottom: 30px;
     }
 
-    #venue h4 {
-        padding: 0 5%;
+    #venue h4,  #venue h5 {
         font-size: 22px;
     }
 

@@ -120,7 +120,7 @@ nav a:hover {
 
 section {
     position: relative;
-    padding-top: 180px;
+    padding-top: 150px;
     padding-bottom: 30px;
     min-height: 700px;
 }
@@ -352,6 +352,11 @@ section:nth-child(odd) {
 
 #venue .venue-text p {
     margin-bottom: 2px;
+}
+
+#venue .venue-text p.address {
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 /* =============================
