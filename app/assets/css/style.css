@@ -350,6 +350,10 @@ section:nth-child(odd) {
     text-align: left;
 }
 
+#venue .venue-text p {
+    margin-bottom: 2px;
+}
+
 /* =============================
  * Sponsor
  * ============================= */
