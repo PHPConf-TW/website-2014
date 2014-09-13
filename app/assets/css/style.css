@@ -270,10 +270,13 @@ section:nth-child(odd) {
  * ============================= */
 
 #speakers {
-    display: none;
 }
 
 #speakers h4 {
+    margin-bottom: 20px;
+}
+
+#speakers h5 {
     margin-bottom: 20px;
 }
 
@@ -284,7 +287,7 @@ section:nth-child(odd) {
 }
 
 #speakers .speaker-info {
-    margin-left: 190px;
+    margin-left: 150px;
 }
 
 #speakers .speaker-info h4 {
@@ -302,18 +305,23 @@ section:nth-child(odd) {
 
 #speakers .speaker-links {
     margin-top: 20px;
+    display: none;
 }
 
 #speakers .avatar {
-    width: 140px;
+    width: 120px;
+    height: 120px;
     float: left;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 #speakers .avatar-image {
     width: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
+    height: 100%;
 }
 
 /* =============================
