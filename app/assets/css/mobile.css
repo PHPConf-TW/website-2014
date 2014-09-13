@@ -119,17 +119,18 @@
         text-align: center;
     }
 
-    .speaker {
+    #speakers .speaker {
         width: 100%;
     }
 
-    .avatar {
+    #speakers .avatar {
         width: 80px;
-        padding-left: 5%;
+        height: 80px;        
+        margin-left: 15px;
     }
 
-    .speaker-info {
-        margin-left: 100px;
+    #speakers .speaker-info {
+        margin-left: 95px;
         padding: 0 5%;
     }
 
