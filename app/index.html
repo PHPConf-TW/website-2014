@@ -137,7 +137,7 @@
             </div>
             <hr>
         </div>
-<!--
+
         <div class="speaker">
             <div class="avatar" style="background-image:url(assets/images/speakers/feng.jpg)"></div>
             <div class="speaker-info">
@@ -149,7 +149,7 @@
             </div>
             <hr>
         </div>
--->
+
         <div class="speaker">
             <div class="avatar" style="background-image:url(assets/images/speakers/Joe.jpg)"></div>
             <div class="speaker-info">
@@ -204,7 +204,7 @@
             </div>
             <hr>
         </div>
-<!--
+
         <div class="speaker">
             <div class="avatar" style="background-image:url(assets/images/speakers/JimmyHuang.png)"></div>
             <div class="speaker-info">
@@ -214,7 +214,7 @@
             </div>
             <hr>
         </div>
--->
+
         <div class="speaker">
             <div class="avatar" style="background-image:url(assets/images/speakers/c9s.jpg)"></div>
             <div class="speaker-info">
@@ -328,14 +328,17 @@
                 <tr>
                     <td class="time">09:30 ~ 10:40</td>
                     <td>
-                        <strong>PHP在微博的使用經驗 (Laruence)</strong><br><br>
+                        <p><strong>微博LAMP優化之路 (Laruence)</strong></p>
 
-                        <p>簡介待補</p>
+                        <p>微博是目前中國最大的社交媒體平台，每天有近100億的訪問請求，2011年微博遭遇爆炸式增長，原有的架構遇到極大的性能挑戰。
+                        倆年來，微博一直在做性能優化和系統改進工作，到目前位置，LAMP系統得到很大的性能提升，首屏時間從2012年初的3秒降低到現在的1.2秒，LAMP服務器數目卻一直在降低。
+                        這其中的到底做了那些優化工作，作為領導這些優化的作者，將為大家一一道來。</p>
                     </td>
                     <td>
-                        <strong>PHP on Microsoft Azure (MS)</strong><br><br>
+                        <p><strong>Building High available and scalable website from Microsoft Azure (方鶴)</strong></p>
 
-                        <p>簡介待補</p>
+                        <p>在不斷的演化過程中，提供 Pass & IaaS 服務的 Microsoft Azure 其實不只有整合微軟的技術，也完整支援由 PHP 建構的網路雲端程式。
+                        本議程將介紹如何運用 Microsoft Azure 提供的服務來部屬或重新建置 PHP 網路應用程式，包含資料庫建制與專屬的 API 的使用，使得由 PHP 建制的雲端服務也有絕佳的執行效能以及高度延展性。</p>
                     </td>
                 </tr>
                 <tr>
@@ -365,16 +368,16 @@
                 <tr>
                     <td class="time">12:30 ~ 13:20</td>
                     <td>
-                        <strong>MongoDB (ReinySong)</strong><br><br>
+                        <p><strong>whoscall 的 MongoDB 使用經驗 (ReinySong)</strong></p>
 
-<p>簡介待補</p>
+                        <p>MongoDB 從前年年底開始陪伴 whoscall 到現在，過程有血有淚，除了分享 MongoDB 的使用經驗外也會分享採用 MongoDB 的重點。</p>
                     </td>
                     <td>
-<strong>Framework or Framework Less (蒼時弦也)</strong><br><br>
+                        <strong>Framework or Framework Less (蒼時弦也)</strong><br><br>
 
-<p>Framework 可以幫助我們快速的開發網站，但是被「框架」限制住的我們，能夠突破這個框架，做出更多的變化嗎？運用 Composer 讓我們在「套件菜市場」中，尋找適合自己的「零件」然後建構一個能夠對應 Framework 無法適用的簡易型框架。</p>
+                        <p>Framework 可以幫助我們快速的開發網站，但是被「框架」限制住的我們，能夠突破這個框架，做出更多的變化嗎？運用 Composer 讓我們在「套件菜市場」中，尋找適合自己的「零件」然後建構一個能夠對應 Framework 無法適用的簡易型框架。</p>
 
-<p>這場演講將會分享怎麼運用 Pux, idiorm/pairs, twig 等套件，組合出 MVC 的架構，卻能夠在需要的時候隨時置換對應各種情況。</p>
+                        <p>這場演講將會分享怎麼運用 Pux, idiorm/pairs, twig 等套件，組合出 MVC 的架構，卻能夠在需要的時候隨時置換對應各種情況。</p>
                     </td>
                 </tr>
                 <tr>
@@ -392,9 +395,9 @@
 (<a href="https://github.com/tronice/epv" target="_blank">github</a>)</p>
                     </td>
                     <td>
-<strong>Feebee 比價網的甘苦談 (Tsung)</strong><br><br>
+                        <p><strong>Scalability in Mind - 當老軟體Drupal遇上大架構 (Jimmy Huang)</strong></p>
 
-<p>此場次會先聊聊在抓取各種網站遇到的困難, 再進而談到 Feebee 在抓資料、串 API 製作上, 遇到的問題和解法, 最後來簡單示範、說明如何使用 phpQuery 來抓取網頁內容.</p>
+                        <p>Drupal 本來僅針對 Single Server Hosting ，如何在現今擴展性的需求不斷提高下，逐步調適演進？本主題將由 Drupal 的演進陣痛，談談 PHP 專案開發時如何為 Scalibility 預做準備。</p>
                     </td>
                 </tr>
                 <tr>
@@ -450,9 +453,16 @@ Hat都很是重視的LXC管理工具，該如何運用在PHP的專案上呢？�
 <p>在效能以及開發速度上取得平衡，撰寫出屬於自己的 HHVM Extension。</p>
                     </td>
                     <td>
-                        <strong>Percona XtraDB Cluster (Nekobe)</strong><br><br>
+                        <p><strong>MySQL 的效能救贖：Percona XtraDB Cluster (Nekobe)</strong></p>
 
-<p>簡介待補</p>
+                        <p>當使用者成長，系統效能不足時，我們能怎麼辦?
+                        瓶頸在 AP Server時，我們可以用 PHP Accelerator，可以多一台 Server 做 DNS Roundrobin
+                        可以改變 httpd 與 php 的架構，可以使用 Proxy 技術....etc</p>
+
+                        <p>那 MySQL 資料庫呢？
+                        讀寫分離必須改變程式，分析schema最佳化Query曠日費時....</p>
+
+                        <p>Percona XtraDB Cluster 是改程式之前的最後救贖。</p>
                     </td>
                 </tr>
                 <tr>
