@@ -53,6 +53,10 @@
         border-top: 1px solid #eee;
     }
 
+    nav li:last-child {
+      border-bottom: 1px solid #eee;
+    }
+
     #main {
         padding-top: 0;
         padding-bottom: 30px;
@@ -125,7 +129,7 @@
 
     #speakers .avatar {
         width: 80px;
-        height: 80px;        
+        height: 80px;
         margin-left: 15px;
     }
 
