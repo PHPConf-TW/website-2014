@@ -11,7 +11,7 @@
 
     $(function() {
         // 點選 Navigation 連結或 Go Top 按鈕時，頁面要平滑地捲動
-        $('nav a, #gotop a').on('click', function(e) {
+        $('nav a, #gotop').on('click', function(e) {
             e.preventDefault();
 
             var $this = $(this);
@@ -30,9 +30,9 @@
         var scroll = $w.scrollTop();
         // Do something
         if (scroll > 500) {
-            $g.show();
+            $g.show(200);
         } else {
-            $g.hide();
+            $g.hide(200);
         }
     });
 
