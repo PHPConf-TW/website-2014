@@ -18,6 +18,9 @@
             var pageId = $this.attr('href');
             var top = $(pageId).offset().top;
 
+            $('nav a').css('border-bottom', '0px');
+            $this.css('border-bottom', '3px solid #000');
+
             $b.animate({
                 scrollTop: top
             }, 600, function () {
