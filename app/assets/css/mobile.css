@@ -49,7 +49,7 @@
         display: block;
         text-align: center;
         font-size: 24px;
-        line-height: 40px;
+        line-height: 45px;
         border-top: 1px solid #eee;
         padding-right: 0px;
     }
@@ -61,7 +61,7 @@
     nav a {
       display: block;
       width: 100%;
-      padding-bottom:: 0px;
+      padding-bottom: 0px;
     }
 
     nav a:hover {
