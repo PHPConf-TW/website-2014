@@ -5,3 +5,4 @@ test/*.js
 dist
 npm-debug.log
 .DS_Store
+*.sublime-*
