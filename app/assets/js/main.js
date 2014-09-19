@@ -38,5 +38,4 @@
             $g.hide(200);
         }
     });
-
 })(window, document);
