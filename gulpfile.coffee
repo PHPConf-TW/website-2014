@@ -109,6 +109,7 @@ gulp.task 'default', (cb) ->
 
 gulp.task 'build', (cb) ->
   runs([
+    'jshint'
     'images'
     'copy']
     'html'
