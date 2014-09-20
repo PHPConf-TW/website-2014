@@ -1,13 +1,13 @@
+/*global $:false */
+
 (function(w, d) {
     'use strict';
 
     var $w = $(w);
-    var $d = $(d);
     var $g = $('#gotop');
     var $b = (window.opera) ?
         (document.compatMode === 'CSS1Compat' ? $('html') : $('body')) :
         $('html,body');
-    var $s = $('section');
 
     $(function() {
         // 點選 Navigation 連結或 Go Top 按鈕時，頁面要平滑地捲動
