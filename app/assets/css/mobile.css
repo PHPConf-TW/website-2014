@@ -114,10 +114,18 @@
         padding: 0 5%;
     }
 
-    .about-info {
+    #about .about-info {
         width: 100%;
         font-size: 12px;
     }
+	
+	#about .about-staff {
+		width: 100%;
+	}
+	
+	#about .staff {
+		width: 100%;
+	}
 
     .about-info span {
         display: block;
