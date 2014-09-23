@@ -16,6 +16,14 @@ paths =
   dist: 'dist'
   vendor: 'app/assets/vendor'
 
+# Lint JavaScript
+gulp.task 'jshint', ->
+  gulp.src 'app/assets/js/**/*.js'
+    .pipe reload stream: true, once: true
+    .pipe $.jshint()
+    .pipe $.jshint.reporter 'jshint-stylish'
+    .pipe $.if !browserSync.active, $.jshint.reporter 'fail'
+
 gulp.task 'test_coffee', ->
   gulp.src paths.test + '/**/*.coffee'
     .pipe $.changed paths.test,
@@ -73,7 +81,7 @@ gulp.task 'connect:app', ->
   gulp.watch paths.src + '/*.html', reload
   gulp.watch paths.css + '/**/*.css', reload
   gulp.watch paths.images + '/**/*.{jpg,jpeg,png,gif}', reload
-  gulp.watch paths.script + '/**/*.js', reload
+  gulp.watch paths.script + '/**/*.js', ['jshint', reload]
 
 # Connect
 gulp.task 'connect:dist', ->
@@ -101,6 +109,7 @@ gulp.task 'default', (cb) ->
 
 gulp.task 'build', (cb) ->
   runs([
+    'jshint'
     'images'
     'copy']
     'html'
