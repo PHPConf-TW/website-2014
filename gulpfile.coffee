@@ -20,6 +20,9 @@ paths =
 gulp.task 'jshint', ->
   gulp.src 'app/assets/js/**/*.js'
     .pipe reload stream: true, once: true
+    .pipe $.fixmyjs
+      legacy: true
+    .pipe gulp.dest 'app/assets/js/'
     .pipe $.jshint()
     .pipe $.jshint.reporter 'jshint-stylish'
     .pipe $.if !browserSync.active, $.jshint.reporter 'fail'
