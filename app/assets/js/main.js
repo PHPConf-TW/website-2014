@@ -3,6 +3,7 @@
 (function(w, d) {
   'use strict';
 
+  var title = document.title;
   var $w = $(w);
   var $g = $('#gotop');
   var $b = (window.opera) ?
@@ -17,6 +18,7 @@
       var $this = $(this);
       var pageId = $this.attr('href');
       var top = $(pageId).offset().top;
+      var subTitle = $this.text();
 
       $('nav a').css('border-bottom', '0px');
       $this.css('border-bottom', '3px solid #000');
@@ -28,8 +30,10 @@
       });
 
       if(window.history.pushState) {
-        history.pushState(null, null, pageId);
+        window.history.pushState(null, null, pageId);
       }
+
+      document.title = subTitle + ' | ' + title;
     });
   });
 
