@@ -11,11 +11,11 @@
     $('html,body');
 
   $(function() {
-    $('#gotop').on('click', function(e) {
+    $g.on('click', function(e) {
       $(window).trigger('hashchange');
     });
 
-    $(window).on('hashchange', function (e) {
+    $w.on('hashchange', function (e) {
       var hash = window.location.hash;
       var $link = $('a[href="' + hash + '"]');
       var pageId = window.location.hash.replace('-section', '');
@@ -34,15 +34,14 @@
       document.title = subTitle + ' | ' + title;
     }).trigger('hashchange');
 
-  });
-
-  $w.scroll(function(event) {
-    var scroll = $w.scrollTop();
-    // Do something
-    if (scroll > 500) {
-      $g.show(200);
-    } else {
-      $g.hide(200);
-    }
+    $w.scroll(function(event) {
+      var scroll = $w.scrollTop();
+      // Do something
+      if (scroll > 500) {
+        $g.show(200);
+      } else {
+        $g.hide(200);
+      }
+    });
   });
 })(window, document);
