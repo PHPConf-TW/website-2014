@@ -33,15 +33,15 @@
 
       document.title = subTitle + ' | ' + title;
     }).trigger('hashchange');
+  });
 
-    $w.scroll(function(event) {
-      var scroll = $w.scrollTop();
-      // Do something
-      if (scroll > 500) {
-        $g.show(200);
-      } else {
-        $g.hide(200);
-      }
-    });
+  $w.scroll(function(event) {
+    var scroll = $w.scrollTop();
+    // Do something
+    if (scroll > 500) {
+      $g.show(200);
+    } else {
+      $g.hide(200);
+    }
   });
 })(window, document);
