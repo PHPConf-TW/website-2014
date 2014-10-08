@@ -26,6 +26,10 @@
       }, 600, function () {
         $b.scrollTop(top);
       });
+
+      if(window.history.pushState) {
+        history.pushState(null, null, pageId);
+      }
     });
   });
 
