@@ -11,17 +11,19 @@
     $('html,body');
 
   $(function() {
-    // 點選 Navigation 連結或 Go Top 按鈕時，頁面要平滑地捲動
-    $('nav a, #gotop').on('click', function(e) {
-      e.preventDefault();
+    $('#gotop').on('click', function(e) {
+      $(window).trigger('hashchange');
+    });
 
-      var $this = $(this);
-      var pageId = $this.attr('href');
+    $(window).on('hashchange', function (e) {
+      var hash = window.location.hash;
+      var $link = $('a[href="' + hash + '"]');
+      var pageId = window.location.hash.replace('-section', '');
+      var subTitle = $link.text();
       var top = $(pageId).offset().top;
-      var subTitle = $this.text();
 
       $('nav a').css('border-bottom', '0px');
-      $this.css('border-bottom', '3px solid #000');
+      $link.css('border-bottom', '3px solid #000');
 
       $b.animate({
         scrollTop: top
@@ -29,12 +31,9 @@
         $b.scrollTop(top);
       });
 
-      if(window.history.pushState) {
-        window.history.pushState(null, null, pageId);
-      }
-
       document.title = subTitle + ' | ' + title;
-    });
+    }).trigger('hashchange');
+
   });
 
   $w.scroll(function(event) {
