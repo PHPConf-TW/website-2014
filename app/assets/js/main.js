@@ -19,7 +19,7 @@
       var hash = window.location.hash || '#top-section',
         $link = $('a[href="' + hash + '"]'),
         pageId = hash.replace('-section', ''),
-        subTitle = $link.text() || 'index',
+        subTitle = $link.text() || '首頁',
         top = $(pageId).offset().top || 0;
 
       $('nav a').css('border-bottom', '0px');
