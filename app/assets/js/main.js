@@ -34,7 +34,7 @@
       // update title
       document.title = subTitle + ' | ' + title;
       ga('send', 'pageview', {
-        'page': 'index.html#' + hash,
+        'page': 'index.html' + hash,
         'title': document.title
       });
     }).trigger('hashchange');
