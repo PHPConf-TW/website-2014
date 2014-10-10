@@ -1,4 +1,4 @@
-/*global $:false */
+/*global $:false, ga:false */
 
 (function(w, d) {
   'use strict';
@@ -16,11 +16,11 @@
     });
 
     $w.on('hashchange', function (e) {
-      var hash = window.location.hash;
-      var $link = $('a[href="' + hash + '"]');
-      var pageId = window.location.hash.replace('-section', '');
-      var subTitle = $link.text();
-      var top = $(pageId).offset().top;
+      var hash = window.location.hash || '#top-section',
+        $link = $('a[href="' + hash + '"]'),
+        pageId = hash.replace('-section', ''),
+        subTitle = $link.text() || 'index',
+        top = $(pageId).offset().top || 0;
 
       $('nav a').css('border-bottom', '0px');
       $link.css('border-bottom', '3px solid #000');
@@ -31,7 +31,12 @@
         $b.scrollTop(top);
       });
 
+      // update title
       document.title = subTitle + ' | ' + title;
+      ga('send', 'pageview', {
+        'page': 'index.html#' + hash,
+        'title': document.title
+      });
     }).trigger('hashchange');
   });
 
