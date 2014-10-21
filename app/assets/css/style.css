@@ -410,6 +410,10 @@ section:nth-child(odd) {
     margin-bottom: 20px;
 }
 
+#sponsors .tronice {
+  width: 190px;
+}
+
 /* =============================
  * About
  * ============================= */
