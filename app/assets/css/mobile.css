@@ -118,11 +118,11 @@
         width: 100%;
         font-size: 12px;
     }
-	
+
 	#about .about-staff {
 		width: 100%;
 	}
-	
+
 	#about .staff {
 		width: 100%;
 	}
@@ -173,7 +173,7 @@
         width: 100%;
     }
 
-    #sponsors .imfju {
+    #sponsors .imfju, #sponsors .tronice {
       width: 100%;
     }
 }
