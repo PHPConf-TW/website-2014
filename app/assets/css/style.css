@@ -282,6 +282,10 @@ section:nth-child(odd) {
     text-align: center;
 }
 
+#schedule .slide {
+    text-align: right;
+}
+
 /* =============================
  * Speakers
  * ============================= */
