@@ -2,44 +2,44 @@
  * Common
  * ============================= */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body, h1, h2, h2, h4, h5, ul, li, div, p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font: 16px/18px "微軟正黑體", 'Microsoft Jhenghei', ff-tisa-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-    line-height: 22px;
-    padding-top: 170px;
-    background: #fff;
+  font: 16px/18px "微軟正黑體", 'Microsoft Jhenghei', ff-tisa-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+  line-height: 22px;
+  padding-top: 170px;
+  background: #fff;
 }
 
 p {
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 article {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
 article p {
-    line-height: 26px;
+  line-height: 26px;
 }
 
 hr {
-    width: 30%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 0;
-    border-top: 1px solid #ccc;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 
 /* =============================
@@ -47,28 +47,28 @@ hr {
  * ============================= */
 
 h1 {
-    font-family: consolas;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 50px;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
+  font-family: consolas;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 h1 .code {
-    color: #ddd;
+  color: #ddd;
 }
 
 h2 {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 h3 {
-    padding-top: 50px;
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 50px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 50px;
 }
 
 /* =============================
@@ -76,42 +76,42 @@ h3 {
  * ============================= */
 
 nav {
-    position: fixed;
-    z-index: 400;
-    top: 0;
-    width: 100%;
-    background: #fff;
-    height: 170px;
-    padding-top: 8px;
-    opacity: 0.9;
+  position: fixed;
+  z-index: 400;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  height: 170px;
+  padding-top: 8px;
+  opacity: 0.9;
 }
 
 nav img {
-    height: 100px;
-    display: block;
-    margin: 0px auto;
-    margin-bottom: 30px;
+  height: 100px;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 30px;
 }
 
 nav ul {
-    list-style: none;
-    display: block;
-    text-align: center;
+  list-style: none;
+  display: block;
+  text-align: center;
 }
 
 nav li {
-    display: inline-block;
-    padding-right: 20px;
+  display: inline-block;
+  padding-right: 20px;
 }
 
 nav a {
-    color: #000;
-    font-weight: bold;
-    padding-bottom: 6px;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 6px;
 }
 
 nav a:hover {
-    border-bottom: 3px solid #000;
+  border-bottom: 3px solid #000;
 }
 
 /* =============================
@@ -119,14 +119,14 @@ nav a:hover {
  * ============================= */
 
 section {
-    position: relative;
-    padding-top: 150px;
-    padding-bottom: 30px;
-    min-height: 700px;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  min-height: 700px;
 }
 
 section:nth-child(odd) {
-    background: #EEF5FF;
+  background: #EEF5FF;
 }
 
 /* =============================
@@ -134,13 +134,13 @@ section:nth-child(odd) {
  * ============================= */
 
 #banner {
-    padding-top: 80px;
-    text-align: center;
-    background-image: url(../images/background_7167.jpg);
-    background-position: bottom;
-    background-size: cover;
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  padding-top: 80px;
+  text-align: center;
+  background-image: url(../images/background_7167.jpg);
+  background-position: bottom;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 /* =============================
@@ -152,13 +152,13 @@ section:nth-child(odd) {
 }
 
 #signup p {
-    text-align: center;
-    font-size: 2em;
-    line-height: 1.5;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5;
 }
 
 #signup .date {
-    display: block;
+  display: block;
 }
 
 #signup a.register {
@@ -183,14 +183,14 @@ section:nth-child(odd) {
  * ============================= */
 
 #prospect {
-    color: #fff;
-    background-image: url(../images/background_7185.jpg);
-    background-position: center;
-    background-size: cover;
+  color: #fff;
+  background-image: url(../images/background_7185.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #prospect .post {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /* =============================
@@ -198,34 +198,34 @@ section:nth-child(odd) {
  * ============================= */
 
 #announce h4 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #announce article {
-    width: 600px;
+  width: 600px;
 }
 #announce a {
-    color: #000;
+  color: #000;
 }
 
 #announce a:hover {
-    border-bottom: 1px solid #000;
-    padding-bottom: -1px;
+  border-bottom: 1px solid #000;
+  padding-bottom: -1px;
 }
 
 #announce .highlight {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 #announce .highlight p {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 #announce .post span {
-    position: absolute;
-    margin-left: -100px;
+  position: absolute;
+  margin-left: -100px;
 }
 
 /* =============================
@@ -233,57 +233,57 @@ section:nth-child(odd) {
  * ============================= */
 
 #schedule {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 #schedule article {
-    color: #000;
+  color: #000;
 }
 
 #schedule table {
-    width: 900px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    border-collapse: separate;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background: #fff;
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #fff;
 }
 
 #schedule thead {
-    border: 0;
+  border: 0;
 }
 
 #schedule tbody tr:nth-child(odd) td, #schedule tbody tr:nth-child(odd) th {
-    background-color: #EEF5FF;
+  background-color: #EEF5FF;
 }
 
 #schedule table th, #schedule table td {
-    padding: 8px;
-    line-height: 22px;
-    text-align: left;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-    font-size: 14px;
+  padding: 8px;
+  line-height: 22px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
 }
 
 #schedule table th {
-    border-top: 0;
-    text-align: center;
+  border-top: 0;
+  text-align: center;
 }
 
 #schedule .time {
-    text-align: center;
+  text-align: center;
 }
 
 #schedule .notice {
-    margin-top: 30px;
-    text-align: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 #schedule .slide {
-    text-align: right;
+  text-align: right;
 }
 
 /* =============================
@@ -294,55 +294,55 @@ section:nth-child(odd) {
 }
 
 #speakers h4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #speakers h5 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #speakers .speaker {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 800px;
 }
 
 #speakers .speaker-info {
-    margin-left: 150px;
+  margin-left: 150px;
 }
 
 #speakers .speaker-info h4 {
-    font-size: 30px;
-    margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 #speakers .speaker-info h5 {
-    color: #666;
+  color: #666;
 }
 
 #speakers .speaker-info p {
-    line-height: 22px
+  line-height: 22px
 }
 
 #speakers .speaker-links {
-    margin-top: 20px;
-    display: none;
+  margin-top: 20px;
+  display: none;
 }
 
 #speakers .avatar {
-    width: 120px;
-    height: 120px;
-    float: left;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    background-position: center;
-    background-size: cover;
+  width: 120px;
+  height: 120px;
+  float: left;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 #speakers .avatar-image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* =============================
@@ -353,39 +353,39 @@ section:nth-child(odd) {
 }
 
 #venue h4 {
-    font-size: 30px;
-    margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 #venue h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 #venue .venue-info {
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #venue .venue-info h4 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #venue .venue-text {
-    float: left;
-    width: 380px;
-    margin-right: 20px;
-    text-align: left;
+  float: left;
+  width: 380px;
+  margin-right: 20px;
+  text-align: left;
 }
 
 #venue .venue-text p {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 #venue .venue-text p.address {
-    margin-top: -10px;
-    margin-bottom: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 /* =============================
@@ -393,25 +393,25 @@ section:nth-child(odd) {
  * ============================= */
 
 #sponsors {
-    width: 1000px;
-    margin: 0 auto;
-    margin-top: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 #sponsors h4 {
-    font-size: 22px;
-    margin-bottom: 30px;
-    color: #666;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #666;
 }
 
 #sponsors .sponsor {
-    text-align: center;
-    margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 #sponsors .sponsor img {
-    margin-right: 20px;
-    margin-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 #sponsors .tronice {
@@ -423,97 +423,102 @@ section:nth-child(odd) {
  * ============================= */
 
 #about .about-info {
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
-	margin-bottom: 100px;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 #about .about-info img {
-    display: inline-block;
+  display: inline-block;
 }
 
 #about .about-info ul {
-    width: 320px;
-    list-style: none;
-    text-align: left;
-    margin: 0 auto;
+  width: 400px;
+  list-style: none;
+  text-align: left;
+  margin: 0 auto;
 }
 
 #about .about-info li {
-    height: 50px;
+  height: 60px;
+  text-align: center;
 }
 
 #about .icon {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    vertical-align: middle;
-    margin-right: 20px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 20px;
 }
 
 #about .facebook-icon {
-    background: url(https://www.facebook.com/images/fb_icon_325x325.png);
-    background-size: cover;
+  background: url(https://www.facebook.com/images/fb_icon_325x325.png);
+  background-size: cover;
 }
 
 #about .about-staff {
-	width: 800px;
-	margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
 #about .staff {
-	text-align: center;
-	float: left;
-	width: 200px;
-	margin-bottom: 30px;
+  text-align: center;
+  float: left;
+  width: 200px;
+  margin-bottom: 30px;
 }
 
 #about .staff p {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #about .staff h4 {
-	font-size: 16px;
-	margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 #about .staff strong {
-	color: #aaa;
+  color: #aaa;
 }
 
 #about .staff ul {
-	list-style: none;
-	margin-bottom: 15px;
+  list-style: none;
+  margin-bottom: 15px;
 }
 
 #about .about-header {
-	width: 100%;
-	position: relative;
-	text-align: center;
-	line-height: 1.2;
-	margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 30px;
 }
 
 #about .about-header:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 12px;
-	width: 100%;
-	border-top: 1px solid rgba(0,0,0,0.15);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,0.15);
 }
 
 #about .about-header span {
-	background: #EEF5FF;
-	display: inline-block;
-	border: 1px solid rgba(0,0,0,0.44);
-	text-transform: uppercase;
-	font-size: 14px;
-	padding: 3px 8px 2px 12px;
-	letter-spacing: .3em;
-	color: rgba(0,0,0,0.6);
-	position: relative;
+  background: #EEF5FF;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.44);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 3px 8px 2px 12px;
+  letter-spacing: .3em;
+  color: rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.app-link a:first-child {
+  margin-right: 10px;
 }
 
 /* =============================
@@ -536,14 +541,14 @@ section:nth-child(odd) {
  * ============================= */
 
 footer {
-    height: 100px;
-    margin-top: 100px;
-    padding: 20px;
-    text-align: center;
-    background: #383838;
+  height: 100px;
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  background: #383838;
 }
 
 footer a,
 footer a:visited {
-    color: #fff;
+  color: #fff;
 }

@@ -1,123 +1,123 @@
 @media (max-width: 500px) {
-    body {
-        padding-top: 0;
-    }
+  body {
+    padding-top: 0;
+  }
 
-    section {
-        width: 100%;
-        margin: 0;
-        padding-top: 0;
-    }
+  section {
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+  }
 
-    article p {
-        padding: 0 5%;
-    }
+  article p {
+    padding: 0 5%;
+  }
 
-    article {
-        width: 100%;
-    }
+  article {
+    width: 100%;
+  }
 
-    h1 {
-        line-height: 46px;
-        margin-top: 10px;
-        padding-top: 10px;
-        font-size: 46px;
-    }
+  h1 {
+    line-height: 46px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 46px;
+  }
 
-    h2 {
-        font-size: 18px;
-    }
+  h2 {
+    font-size: 18px;
+  }
 
-    h4 {
-        line-height: 30px;
-    }
+  h4 {
+    line-height: 30px;
+  }
 
-    nav {
-        height: auto;
-        position: relative;
-        padding-bottom: 30px;
-    }
+  nav {
+    height: auto;
+    position: relative;
+    padding-bottom: 30px;
+  }
 
-    nav img {
-        height: 180px;
-    }
+  nav img {
+    height: 180px;
+  }
 
-    nav ul {
-    }
+  nav ul {
+  }
 
-    nav li {
-        display: block;
-        text-align: center;
-        font-size: 24px;
-        line-height: 45px;
-        border-top: 1px solid #eee;
-        padding-right: 0px;
-    }
+  nav li {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 45px;
+    border-top: 1px solid #eee;
+    padding-right: 0px;
+  }
 
-    nav li:last-child {
-      border-bottom: 1px solid #eee;
-    }
+  nav li:last-child {
+    border-bottom: 1px solid #eee;
+  }
 
-    nav a {
-      display: block;
-      width: 100%;
-      padding-bottom: 0px;
-    }
+  nav a {
+    display: block;
+    width: 100%;
+    padding-bottom: 0px;
+  }
 
-    nav a:hover {
-      border-bottom: 0px;
-    }
+  nav a:hover {
+    border-bottom: 0px;
+  }
 
-    #main {
-        padding-top: 0;
-        padding-bottom: 30px;
-    }
+  #main {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
 
-    #venue .venue-info {
-        width: 100%;
-    }
+  #venue .venue-info {
+    width: 100%;
+  }
 
-    #venue .venue-text {
-        width: 100%;
-        float: none;
-        margin-bottom: 30px;
-    }
+  #venue .venue-text {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
 
-    #venue h4,  #venue h5 {
-        font-size: 22px;
-    }
+  #venue h4,  #venue h5 {
+    font-size: 22px;
+  }
 
-    #venue .venue-map img {
-        width: 100%;
-    }
+  #venue .venue-map img {
+    width: 100%;
+  }
 
-    .post span {
-        margin-left: 0;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        text-align: center;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-        width: 50%;
-    }
+  .post span {
+    margin-left: 0;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+  }
 
-    #schedule table {
-        width: 100%;
-    }
+  #schedule table {
+    width: 100%;
+  }
 
-    th {
-        width: auto;
-    }
+  th {
+    width: auto;
+  }
 
-    .trans {
-        padding: 0 5%;
-    }
+  .trans {
+    padding: 0 5%;
+  }
 
-    #about .about-info {
-        width: 100%;
-        font-size: 12px;
-    }
+  #about .about-info {
+    width: 100%;
+    font-size: 12px;
+  }
 
 	#about .about-staff {
 		width: 100%;
@@ -127,53 +127,61 @@
 		width: 100%;
 	}
 
-    .about-info span {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
+  .about-info span {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 
-    .about-info ul {
-        width: 100%;
-    }
+  .about-info ul {
+    width: 100%;
+  }
 
-    .about-info li {
-        display: block;
-        text-align: center;
-    }
+  .about-info li {
+    display: block;
+    text-align: center;
+  }
 
-    #speakers .speaker {
-        width: 100%;
-    }
+  #speakers .speaker {
+    width: 100%;
+  }
 
-    #speakers .avatar {
-        width: 80px;
-        height: 80px;
-        margin-left: 15px;
-    }
+  #speakers .avatar {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+  }
 
-    #speakers .speaker-info {
-        margin-left: 95px;
-        padding: 0 5%;
-    }
+  #speakers .speaker-info {
+    margin-left: 95px;
+    padding: 0 5%;
+  }
 
-    #gotop {
-      bottom: 10px;
-      right: 10px;
-      width: 30px;
-      height: 30px;
-      background-size: 30px;
-    }
+  #gotop {
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+  }
 
-    #announce article {
-        width: 100%;
-    }
+  #announce article {
+    width: 100%;
+  }
 
-    #sponsors {
-        width: 100%;
-    }
+  #sponsors {
+    width: 100%;
+  }
 
-    #sponsors .imfju, #sponsors .tronice {
-      width: 100%;
-    }
+  #sponsors .imfju, #sponsors .tronice {
+    width: 100%;
+  }
+
+  .app-link a {
+    display: block;
+  }
+
+  .app-link a:first-child {
+    margin: 0px;
+  }
 }
