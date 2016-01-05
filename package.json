@@ -19,7 +19,7 @@
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^1.2.1",
     "gulp-jshint": "^1.9.0",
-    "gulp-load-plugins": "^0.7.1",
+    "gulp-load-plugins": "^1.2.0",
     "gulp-minify-html": "^0.1.7",
     "gulp-mocha": "^1.1.2",
     "gulp-replace": "^0.4.0",
