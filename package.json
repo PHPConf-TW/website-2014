@@ -28,7 +28,7 @@
     "gulp-uncss": "^1.0.5",
     "gulp-useref": "^1.0.2",
     "gulp-util": "^3.0.0",
-    "jshint-stylish": "^1.0.0",
+    "jshint-stylish": "^2.2.0",
     "mocha": "^2.0.1",
     "run-sequence": "^1.0.2",
     "uuid": "^2.0.1"
