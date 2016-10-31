@@ -39,6 +39,6 @@
     "test": "bower install && gulp test_coffee && gulp release && gulp test"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4"
   }
 }
